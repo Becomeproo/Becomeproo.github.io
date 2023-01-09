@@ -13,9 +13,9 @@ date: 2023-01-09
 last_modified_at: 2023-01-09
 ---
 
-# LinearLayout
+# 📚LinearLayout
 
-## View와 ViewGroup
+## 📔View와 ViewGroup
 
 안드로이드에서 View는 화면에 표시되는 위젯 또는 인터페이스 요소를 나타내며, 안드로이드의 모든 UI 구성 요소에 대한 기본 클래스이다. 화면에 보이는 구성요소들 button, text field, image 등은 모두 View이다.
 
@@ -27,13 +27,14 @@ ViewGroup은 포함된 View의 위치 지정 및 크기 조정을 담당하고 �
 
 <br>
 
-## LinearLayout
+## 📔LinearLayout
 
-LinearLayout은 View들을 수평이나 수직으로 배치할 수 있는 레이아웃(뷰 그룹)이다. LinearLayout의 주요 속성들을 살펴보면,
+LinearLayout은 View들을 수평이나 수직으로 배치할 수 있는 레이아웃(뷰 그룹)이다. LinearLayout의 주요 속성들을 살펴보면 다음과 같다.
 
-### LinearLayout의 속성
+### 📖LinearLayout의 속성
+
 |**속성명**|설명|
-|:---:|---|
+|:---:|:---|
 |`android:baselineAligned`|기준점을 설정해서 정렬하는 기능으로 false로 설정하면 baselines 정렬을 하지 않는다. 기본값은 true이다|
 |`android:baselineAlignedChildIndex`|linearlayout이 다른 레이아웃의 일부인 경우 baseline으로 정렬할 자식 뷰를 지정|
 |`android:divider`|drawable을 button 사이의 수직 구분자로 사용|
@@ -42,7 +43,7 @@ LinearLayout은 View들을 수평이나 수직으로 배치할 수 있는 레이
 |`android:orientation`|수직 또는 수평의 정렬 방향을 지정|
 |`android:weightSum`|하위 요소들이 갖는 weight의 합|
 
-### LinearLayout 선언 예
+### 📖LinearLayout 선언 예
 
 ```kotlin
 <?xml version="1.0" encoding="utf-8"?>
@@ -56,7 +57,7 @@ LinearLayout은 View들을 수평이나 수직으로 배치할 수 있는 레이
 </LinearLayout>
 ```
 
-### android:baselineAligned
+### 📖android:baselineAligned
 
 baseline을 기준으로 정렬을 할지 설정하는 속성이다. 즉, 값이 `true`이면 하단 정렬을, `false`이면 상단 정렬을 하겠다는 의미이며 글자가 들어있는 가장 크기가 큰 뷰를 기준으로 정렬한다.
 <br>
@@ -101,31 +102,32 @@ baseline을 기준으로 정렬을 할지 설정하는 속성이다. 즉, 값이
 </LinearLayout>
 ```
 
-위에서 `android:baselineAligned="true"`로 설정되어 있다면, 결과는 다음과 같이 텍스드들이 하단 정렬되어 있다.
+위에서 `android:baselineAligned="true"`로 설정되어 있다면, 결과는 다음과 같이 텍스트들이 하단 정렬되어 있다.
 
 <img src="/assets/imges/android/LinearLayout/baseline_true.png" />
 
-반대로 이 값이 `false`로 설정되어 있다면, 텍스드들이 상단 정렬된 결과를 보여준다.
+반대로 이 값이 `false`로 설정되어 있다면, 텍스트들이 상단 정렬된 결과를 보여준다.
 
 <img src="/assets/imges/android/LinearLayout/baseline_false.png" />
 
-당연하게도 이 속성은 `android:orientation="horizontal"`로 설정되어 있을 시에만 가능하다. 수직으로 정렬되어 있어서는 기준선을 잡을 수 없기 때문이다.
+당연히 이 속성은 `android:orientation="horizontal"`로 설정되어 있을 시에만 가능하다. 수직으로 정렬되어 있어서는 기준선을 잡을 수 없기 때문이다.
 
-### android:baselineAlignedChildIndex
+### 📖android:baselineAlignedChildIndex
 
 이 속성은 위 `android:baselineAligned` 속성과 기능이 같다. 다만, 속성명의 Index가 의미하듯이, 특정 하위 요소의 인덱스를 지정하여 기준선으로 잡는다. 위 텍스트 4개를 예로 들자면, 각각 0, 1, 2, 3의 인덱스 번호를 가진다.
 
-### android:divider
+### 📖android:divider
 
-해당 속성은 말 그대로 구분선을 의미한다. drawable 경로에 있는 파일을 사용하여 뷰 중간에 구분선을 구현한다.
+해당 속성은 말 그대로 구분선을 의미한다. drawable 경로에 있는 파일을 사용하여 뷰 사이에 구분선이 삽입된다.
 
-### android:gravity
+### 📖android:gravity
 
 gravity 속성은 해당 뷰의 위치를 지정할 때 사용한다.
 
-속성값들을 정리하자면,
+속성값들을 정리해보면 다음과 같다.
 
-#### gravity의 속성값
+#### 📖gravity의 속성값
+
 |속성명|설명|
 |:---:|:---:|
 |left|뷰의 왼쪽에 배치|
@@ -143,12 +145,12 @@ gravity 속성은 해당 뷰의 위치를 지정할 때 사용한다.
 |fill_horizontal|뷰의 가로를 부모 뷰그룹의 사이즈에 맞게 채움|
 |fill_vertical|뷰의 세로를 부모 뷰그룹의 사이즈에 맞게 채움|
 
-#### gravity와 layout_gravity의 차이
+#### 🔖gravity와 layout_gravity의 차이
 gravity 속성은 해당 View 내부의 자식 뷰의 위치를 설정한다. 반면, layout_gravity는 View를 감싸고 있는 상위 View를 기준으로 했을 때 View의 위치를 설정하게 된다. 그림으로 설명하면 이해하기 쉽다.
 <br>
 ![gravity_layout_gravity](/assets/imges/android/LinearLayout/gravity_layoutgravity.png)
 
-### android:measureWithLargestChild
+### 📖android:measureWithLargestChild
 
 이 속성은 언제 쓰일지는 모르겠다. 가장 큰 크기를 가진 자식 뷰의 크기만큼 `layout_weight` 속성을 가진 자식 뷰들이 같은 크기를 가진다.
 
@@ -187,7 +189,7 @@ gravity 속성은 해당 View 내부의 자식 뷰의 위치를 설정한다. �
 
 ![measurewithlargestchild](/assets/imges/android/LinearLayout/measurewithlargestchild.png)
 
-### android:orientation
+### 📖android:orientation
 
 LinearLayout의 `android:orientation` 속성을 사용하여 레이아웃 방향을 지정할 수 있다.
 
@@ -265,7 +267,7 @@ LinearLayout의 `android:orientation` 속성을 사용하여 레이아웃 방향
 
 3개의 텍스트가 수직으로 정렬되어 있다.
 
-### android:weightSum
+### 📖android:weightSum
 
 ViewGroup에 `android:weightSum` 속성값을 지정하고, 자식 뷰에 `android:layout_weight` 값을 지정하면 해당하는 값에 따라 비율에 맞춰 크기를 가진다.
 
