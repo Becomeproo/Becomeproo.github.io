@@ -13,6 +13,11 @@ date: 2023-01-09
 last_modified_at: 2023-01-09
 ---
 
+<br>
+<br>
+<br>
+
+
 # 📚LinearLayout
 
 ## 📔View와 ViewGroup
