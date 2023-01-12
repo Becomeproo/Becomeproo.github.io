@@ -57,7 +57,7 @@ Relative Positioning 방법은 ConstraintLayout의 `자식 뷰 위젯 간 상대
 다음과 같이 "A"와 "B"라는 뷰 위젯이 존재한다고 가정해보자. "B" 위젯을 "A" 위젯의 오른쪽으로 배치시키고자 할 때는 다음과 같은 제약을 지정한다.
 
 
-![relative-positioning1](/assets/imges/android/constraintlayout/relative_positioning1.png)
+![relative-positioning1](/assets/images/android/constraintlayout/relative_positioning1.png)
 
 ```kotlin
 android:id="@+id/B"
@@ -66,5 +66,5 @@ layout_constraintLeft_toRightOf="@id/A" // A는 생성되어 있다고 가정
 
 위와 같은 제약을 지정한 후의 결과는 원하던대로 "B"가 "A"의 오른쪽으로 배치된 것을 볼 수 있다. 여기서 주의할 점은 **ConstraintLayout은 수평과 수직 모두 각각 하나 이상 지정해줘야 한다는 점이다.** 때문에 `layout_constraintLeft_toRightOf="@id/A"`외에도 `layout_constraintTop_toTopOf="@id/A"`를 지정해 주었다. "B"의 상단을 "A"의 상단과 맞추겠다는 의미이다.
 
-![relative-positioning1](/assets/imges/android/constraintlayout/relative_positioning2.png)
+![relative-positioning1](/assets/images/android/constraintlayout/relative_positioning2.png)
 

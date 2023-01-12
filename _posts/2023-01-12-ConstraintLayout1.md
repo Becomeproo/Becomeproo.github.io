@@ -81,7 +81,7 @@ ConstraintLayout은 앞서 언급했듯이 제약을 걸어 위치와 크기를 
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
 
-![contraint1](/assets/imges/android/constraintlayout/constraint1.png)
+![contraint1](/assets/images/android/constraintlayout/constraint1.png)
 
 간단한 텍스트 뷰를 하나 만들어 주었고 끝부분과 하단 부분에 제약을 주었다. 여기서 `parent`는 `ConstraintLayout`을 의미한다. 이는 즉, 텍스트 뷰의 위치를 `ConstraintLayout`의 끝과 하단에 맞추겠다는 의미이다. 이미지에도 텍스트 뷰가 그에 맞게 위치해 있는 것을 볼 수 있다.
 

@@ -26,7 +26,7 @@ last_modified_at: 2023-01-09
 
 ViewGroup은 다른 View들을 유지하는 데 사용되는 View의 하위 클래스이다. View의 계층 구조를 만들고 사용자 인터페이스의 레이아웃을 정의하는 데 사용된다. ViewGroup의 하위 클래스로 LinearLayout, RelativeLayout, ConstraintLayout 등이 있고 오늘은 이 중 LinearLayout에 대해 살펴보고자 한다.
 
-<img src="/assets/imges/android/LinearLayout/view_viewgroup.png" />
+<img src="/assets/images/android/LinearLayout/view_viewgroup.png" />
 
 ViewGroup은 포함된 View의 위치 지정 및 크기 조정을 담당하고 세부적인 레이아웃 구성을 위해 중첩될 수 있다. 일반적으로 View를 사용하여 앱의 개별 인터페이스 요소를 나타내고 ViewGroup 개체를 사용하여 해당 View를 유지하고 정렬한다.
 
@@ -109,11 +109,11 @@ baseline을 기준으로 정렬을 할지 설정하는 속성이다. 즉, 값이
 
 위에서 `android:baselineAligned="true"`로 설정되어 있다면, 결과는 다음과 같이 텍스트들이 하단 정렬되어 있다.
 
-<img src="/assets/imges/android/LinearLayout/baseline_true.png" />
+<img src="/assets/images/android/LinearLayout/baseline_true.png" />
 
 반대로 이 값이 `false`로 설정되어 있다면, 텍스트들이 상단 정렬된 결과를 보여준다.
 
-<img src="/assets/imges/android/LinearLayout/baseline_false.png" />
+<img src="/assets/images/android/LinearLayout/baseline_false.png" />
 
 당연히 이 속성은 `android:orientation="horizontal"`로 설정되어 있을 시에만 가능하다. 수직으로 정렬되어 있어서는 기준선을 잡을 수 없기 때문이다.
 
@@ -153,7 +153,7 @@ gravity 속성은 해당 뷰의 위치를 지정할 때 사용한다.
 #### 🔖gravity와 layout_gravity의 차이
 gravity 속성은 해당 View 내부의 자식 뷰의 위치를 설정한다. 반면, layout_gravity는 View를 감싸고 있는 상위 View를 기준으로 했을 때 View의 위치를 설정하게 된다. 그림으로 설명하면 이해하기 쉽다.
 <br>
-![gravity_layout_gravity](/assets/imges/android/LinearLayout/gravity_layoutgravity.png)
+![gravity_layout_gravity](/assets/images/android/LinearLayout/gravity_layoutgravity.png)
 
 ### 📖android:measureWithLargestChild
 
@@ -192,7 +192,7 @@ gravity 속성은 해당 View 내부의 자식 뷰의 위치를 설정한다. �
 </LinearLayout>
 ```
 
-![measurewithlargestchild](/assets/imges/android/LinearLayout/measurewithlargestchild.png)
+![measurewithlargestchild](/assets/images/android/LinearLayout/measurewithlargestchild.png)
 
 ### 📖android:orientation
 
@@ -231,7 +231,7 @@ LinearLayout의 `android:orientation` 속성을 사용하여 레이아웃 방향
 </LinearLayout>
 ```
 
-![orientation_horizontal](/assets/imges/android/LinearLayout/orientation_horizontal.png)
+![orientation_horizontal](/assets/images/android/LinearLayout/orientation_horizontal.png)
 
 텍스트 3개가 나란히 수평으로 정렬되어 있는 것을 볼 수 있다.
 
@@ -268,7 +268,7 @@ LinearLayout의 `android:orientation` 속성을 사용하여 레이아웃 방향
 </LinearLayout>
 ```
 
-![orientation_vertical](/assets/imges/android/LinearLayout/orientation_vertical.png)
+![orientation_vertical](/assets/images/android/LinearLayout/orientation_vertical.png)
 
 3개의 텍스트가 수직으로 정렬되어 있다.
 
@@ -308,4 +308,4 @@ ViewGroup에 `android:weightSum` 속성값을 지정하고, 자식 뷰에 `andro
 </LinearLayout>
 ```
 
-![weightsum](/assets/imges/android/LinearLayout/weightsum.png)
+![weightsum](/assets/images/android/LinearLayout/weightsum.png)
