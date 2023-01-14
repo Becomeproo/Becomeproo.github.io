@@ -5,7 +5,7 @@ title:  "[Android] ConstraintLayout 정리(2) - Relative Positioning
 categories:
   - Android
 tags:
-  - [Android, 안드로이드 정리, ConstraintLayout]
+  - [Android, Android 정리, ConstraintLayout]
 
 toc: true
 toc_sticky: true
