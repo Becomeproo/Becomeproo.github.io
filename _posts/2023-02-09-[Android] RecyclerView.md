@@ -34,8 +34,6 @@ ListView와 RecyclerView는 모두 데이터 컬렉션을 표시한다는 점에
 1. 성능: RecyclerView는 ListView의 성능적인 한계를 개선하기 위해서 고안되었다. ListView는 리스트에서 각각의 아이템들에 대한 새로운 뷰들을 모두 생성한다. 이는 다수의 데이터를 처리할 때 분명히 한계가 있다. 반면, RecyclerView는 화면에 들어갈 리스트의 크기를 계산하여 리스트에 뷰가 표시될 방법을 결정하면, 스크롤 할 때마다 해당 뷰들을 계속해서 재사용한다. 이는 다수의 데이터를 처리할 때에도 많은 부담을 덜어줄 수 있다. 
 ![](/assets/images/android/recyclerview/recyclerview1.drawio.png)
 
-<br>
-
 2. 유연성: RecyclerView는 보다 모듈화된 아키텍처를 제공하므로 ListView보다 더욱 유연하다. RecyclerView를 사용하면 커스텀 LayoutManager를 만들어 아이템이 표시되는 방식을 제어하고 커스텀 ViewHolder를 만들어 데이터를 표시할 수 있다.
 
 3. 복잡한 데이터 표시: RecyclerView는 복잡한 데이터를 처리하는 데 더 적합하다. RecyclerView를 사용하면 데이터의 다양한 뷰 형식을 표시할 수 있으므로 복잡한 데이터를 더 쉽게 표현할 수 있다.
