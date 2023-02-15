@@ -1108,7 +1108,7 @@ binding.textInputEditText.addTextChangedListener {
 <br>
 
 ## 📔전체 코드
-<https://github.com/Becomeproo/stopwatch>
+<https://github.com/Becomeproo/notepad>
 
 <br>
 
