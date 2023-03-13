@@ -21,7 +21,7 @@ last_modified_at: 2023-03-13 16:28:57+0900
 
 <br><br>
 
-# 웹뷰 앱
+# Github Repository 앱
 
 ## ℹ️앱 설명
 
